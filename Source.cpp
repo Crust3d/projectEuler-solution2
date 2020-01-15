@@ -21,21 +21,19 @@ void fibs(int max)
 
 			if (z % 2 == 0)
 			{
+				std::cout << z << " ";
 				total = total + z;
 			}
-			
-			if (z > max) break;
 
 		} while (z < max);
 
 		std::cout << "The sum of of all even Fibonacci sequence numbers less than "
-			<< max << " is: " << total << std::endl;
-
+			<< max << " is:\n" << total << std::endl;
 }
 
 int main()
 {
-	fibs(10);
+	fibs(4000000);
 	
 	system("pause");
 	return 0;
